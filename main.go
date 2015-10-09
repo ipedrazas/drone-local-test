@@ -7,7 +7,7 @@ import (
 
 
 func pingServer(w http.ResponseWriter, req *http.Request) {
-    w.Write([]byte("ping!"))
+    w.Write([]byte("ping Drone!"))
 }
 
 func main() {
