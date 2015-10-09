@@ -1,0 +1,9 @@
+image: golang:1.5.1
+env:
+  - GOPATH=/var/cache/drone
+script:
+  - go build
+notify:
+  email:
+    recipients:
+      - ivan@127biscuits.com
