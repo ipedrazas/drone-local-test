@@ -8,7 +8,7 @@ import (
 
 
 func droneServer(w http.ResponseWriter, req *http.Request) {
-    w.Write([]byte("Built by Drone!"))
+    w.Write([]byte("Built by Drone in Kubernetes!"))
 }
 
 func main() {
