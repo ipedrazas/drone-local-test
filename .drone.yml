@@ -3,4 +3,8 @@ env:
   - GOPATH=/var/cache/drone
 script:
   - CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o dronetest .
-  - docker build -t drone/dronetest .
+  
+publish:
+  docker:
+    docker_host: tcp://drone-worker.ipedrazas.k82.co.uk:2375
+    image_name: dronetest
